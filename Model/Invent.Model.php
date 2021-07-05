@@ -8,10 +8,10 @@
             $con->close();
             return $consulta;
         }
-        public function VerInventario($n,$d,$c,$p,$f)
+        public function VerInventario()
         {
             $con=new Conexion();
-            $consulta=$con->query("");
+            $consulta=$con->query("SELECT * FROM `inventario`;");
             $con->close();
             return $consulta;
         }

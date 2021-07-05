@@ -13,18 +13,21 @@ Class Inventario
         $in=$invet->GuardarInventario($nombre,$descr,$cantidad,$precio,$fecha);
         $smarty->assign('nombre','Inventario');
         $smarty->display('Inventario.tpl');
-    }
-    public function BuscarProducto()
+    } 
+    public function VerInventarioVis()
     {
-
+        $smarty = new Smarty();
+        $invet = new Invent();
+        $in=$invet->VerInventario();
+        $i=array();
+        while($row=mysqli_fetch_assoc($in))
+        {
+            array_push($i,$row);
+        }
+        $smarty->assign('inventario',$i);
+        $smarty->assign('nombre','Ver Inventario');
+        $smarty->display('verInventario.tpl');
     }
-    public function VerInventario()
-    {
-        
-    }
-    public function EliminarProducto()
-    {
-
-    }
+  
 }
 ?>
