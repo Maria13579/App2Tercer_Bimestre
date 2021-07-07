@@ -28,6 +28,12 @@ Class Inventario
         $smarty->assign('nombre','Ver Inventario');
         $smarty->display('verInventario.tpl');
     }
+    public function VERINGRESOPRODUCTO()
+    {
+        $smarty = new Smarty();
+        $smarty->assign('nombre','Inventario');
+        $smarty->display('Inventario.tpl');
+    }
   
 }
 ?>

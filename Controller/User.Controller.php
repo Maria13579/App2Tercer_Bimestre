@@ -22,5 +22,11 @@
             }
         
         }
+        public function IrHome()
+        {
+            $smarty = new Smarty();
+            $smarty->assign('nombre','Inicio Sesion');
+            $smarty->display('Home.tpl');
+        }
     }
 ?>
