@@ -9,12 +9,12 @@
                                 <div class="input-field col s4">
                                     <i class="material-icons prefix">account_circle</i>
                                     <input  type="text" name="user" placeholder="Ingrese su Usuario">   
-                                    <br/><br/>                                
+                                                               
                                 </div>
                                 <div class="input-field col s4">
                                     <i class="material-icons prefix">lock</i>
                                         <input type="password" name="pass" placeholder="Ingrese su Contraseña">
-                                        <br/><br/>
+                                   
                                </div>
                                 </div>
                             </div>
